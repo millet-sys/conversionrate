@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily_Rate_Conversation</title>
+    <style>
+        /* CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .usd {
+            margin-top: 20px;
+            background-color: #fbdddd;
+            font-family: monospace;
+            padding: 20px 5px;
+        }
+
+
+        .nextupdate {
+            margin-top: 20px;
+            background-color: #fdbaba;
+            padding: 20px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Daily USD to ZMW Currency Rate</h1>
+    <div class="container">
+
+        <div>
+            <h2>Conversion Rate 1.00 USD to ZMW</h2>
+            <p class="usd">
+                <!-- ejs code here -->
+                <%= usd %>
+            </p>
+        </div>
+
+        <div>
+            <h2>Next Update</h2>
+            <p class="nextupdate">
+                <!-- ejs code here -->
+                <%= nextupdate %>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
